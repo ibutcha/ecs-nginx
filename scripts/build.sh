@@ -12,3 +12,6 @@ docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
 
 docker push $REPOSITORY_URI:latest
 docker push $REPOSITORY_URI:$IMAGE_TAG
+
+sed -e 's|latest|$IMAGE_TAG|g;' ./ecs/taskDefinition.json > taskDefinition.json
+aws ecs register-task-definition --cli-input-json file://taskDefinition.json --region ap-southeast-2
