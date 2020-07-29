@@ -1,6 +1,6 @@
 {
-  "family": "TASK_DEFINITION",
-  "executionRoleArn": "arn:aws:iam::491435228159:role/ecsTaskExecutionRole",
+  "family": "AWS_ECS_TASK_DEFINITION",
+  "executionRoleArn": "AWS_ECS_TASK_ROLE_ARN",
   "networkMode": "awsvpc",
   "requiresCompatibilities": ["EC2", "FARGATE"],
   "cpu": "256",
