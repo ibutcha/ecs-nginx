@@ -1,5 +1,5 @@
 {
-  "family": "ecs-nginx",
+  "family": "TASK_DEFINITION",
   "executionRoleArn": "arn:aws:iam::491435228159:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
   "requiresCompatibilities": ["EC2", "FARGATE"],
