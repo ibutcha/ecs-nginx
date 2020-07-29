@@ -7,7 +7,7 @@
   "memory": "512",
   "containerDefinitions": [{
     "name": "ecs-nginx",
-    "image": "IMAGE_URL",
+    "image": "IMAGE_URL:IMAGE_TAG",
     "essential": true,
     "portMappings": [{
       "containerPort": 80,
