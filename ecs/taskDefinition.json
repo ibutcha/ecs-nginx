@@ -6,7 +6,7 @@
   "cpu": "256",
   "memory": "512",
   "containerDefinitions": [{
-    "name": "ecs-nginx",
+    "name": "CONTAINER",
     "image": "IMAGE_URL",
     "essential": true,
     "portMappings": [{
