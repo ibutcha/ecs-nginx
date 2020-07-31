@@ -9,4 +9,4 @@ all: build-image
 
 build-image:
 	docker build -t $(ECR_ACCOUNT)$(CONTAINER):$GIT_COMMIT \
-		-t $(ECR_ACCOUNT)$(CONTAINER):latest
+		-t $(ECR_ACCOUNT)$(CONTAINER):latest .
