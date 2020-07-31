@@ -4,7 +4,7 @@
   "revision": {
     "revisionType": "S3",
     "s3Location": {
-      "bucket": "jenkins-ecs-code-deploy",
+      "bucket": "jenkins-ecs-codedeploy",
       "key": "appspec.yaml",
       "bundleType": "YAML"
     }
