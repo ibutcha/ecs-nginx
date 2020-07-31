@@ -11,3 +11,8 @@ build-image:
 	docker build -t $(AWS_ACCOUNT_NUMBER).dkr.ecr.$(AWS_REGION).amazonaws.com/$(REPO_NAME):$(GIT_COMMIT) \
 		-t $(AWS_ACCOUNT_NUMBER).dkr.ecr.$(AWS_REGION).amazonaws.com/$(REPO_NAME):$(GIT_BRANCH) \
 		-t $(AWS_ACCOUNT_NUMBER).dkr.ecr.$(AWS_REGION).amazonaws.com/$(REPO_NAME):latest .
+
+
+.PHONY: push-image
+push-image:
+	docker push $(AWS_ACCOUNT_NUMBER).dkr.ecr.$(AWS_REGION).amazonaws.com/$(REPO_NAME)
