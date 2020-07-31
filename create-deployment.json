@@ -1,0 +1,12 @@
+{
+  "applicationName": "AppECS-ecs-course-ec2-nginx-blue-green",
+  "deploymentGroupName": "DgpECS-ecs-course-ec2-nginx-blue-green",
+  "revision": {
+    "revisionType": "S3",
+    "s3Location": {
+      "bucket": "jenkins-ecs-code-deploy",
+      "key": "appspec.yaml",
+      "bundleType": "YAML"
+    }
+  }
+}
