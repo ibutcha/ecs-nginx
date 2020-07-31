@@ -12,4 +12,4 @@ build-image:
 	`aws ecr get-login --region $(REGION) --no-include-email`
 	REPOSITORY_URI=`aws ecr describe-repositories --repository-names $(CONTAINER) | grep repositoryUri | cut -d '"' -f 4`
     IMAGE_TAG=`git rev-parse --short HEAD`
-	echo $REPOSITORY_URI:$IMAGE_TAG
+	echo $REPOSITORY_URI:
