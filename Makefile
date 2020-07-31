@@ -8,7 +8,5 @@ SHELL := /bin/bash
 all: build-image
 
 build-image:
-	docker build -t $(ECR_ACCOUNT)$(CONTAINER):$(GIT_COMMIT) \
-		-t $(ECR_ACCOUNT)$(CONTAINER):latest .
-
-
+	docker build -t $(AWS_ACCOUNT_NUMBER).dkr.ecr.$(AWS_REGION).amazonaws.com/$(REPO_NAME):$(GIT_COMMIT) \
+		t $(AWS_ACCOUNT_NUMBER).dkr.ecr.$(AWS_REGION).amazonaws.com/$(REPO_NAME):latest .
